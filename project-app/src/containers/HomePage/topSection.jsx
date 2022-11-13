@@ -86,8 +86,8 @@ export function TopSection(props) {
               textSize={isMobile ? 35 : 55}
             />
             <Marginer direction="vertical" margin={8} />
-            <SloganText>Find the right specialist</SloganText>
-            <SloganText>For the job</SloganText>
+            <SloganText>Retail recommendation system</SloganText>
+            <SloganText>For micro enterprises</SloganText>
             <Marginer direction="vertical" margin={15} />
             <Button>Join Now</Button>
           </LogoContainer>

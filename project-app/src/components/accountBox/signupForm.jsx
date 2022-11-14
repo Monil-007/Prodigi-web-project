@@ -69,7 +69,7 @@ export function SignupForm(props) {
             <option value="">Tamil</option>
             </select>
 
-
+            <Input placeholder="Shop Capacity" />
         <Input placeholder="Full Name" />
         <Input placeholder="Email" />
         <Input type="password" placeholder="Password" />

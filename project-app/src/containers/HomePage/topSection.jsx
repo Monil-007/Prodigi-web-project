@@ -8,6 +8,9 @@ import { deviceSize } from "../../components/responsive";
 
 import TopSectionBackgroundImg from "../../images/landing-page.jpg";
 import TheBestSpecialistsImg from "../../images/Work only with the best.png";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+//toast.configure()
 
 const TopSectionContainer = styled.div`
   width: 100%;
@@ -70,11 +73,16 @@ const SloganText = styled.h3`
   }
 `;
 
+
+
 export function TopSection(props) {
   const { children } = props;
 
   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
 
+  const popup_func = () => {
+    toast("This part is yet to implement!!")
+  }
   return (
     <TopSectionContainer>
       <BackgroundFilter>
@@ -86,10 +94,12 @@ export function TopSection(props) {
               textSize={isMobile ? 35 : 55}
             />
             <Marginer direction="vertical" margin={8} />
-            <SloganText>Retail recommendation system</SloganText>
-            <SloganText>For micro enterprises</SloganText>
+            <SloganText>Retail Recommendation System</SloganText>
+            <SloganText>For Micro Enterprises !!</SloganText>
+            <SloganText style={{ fontSize: "16px" }}>A supply chain management project </SloganText>
+            <SloganText style={{ fontSize: "16px" }}>made by using ML algos & Blockchain</SloganText>
             <Marginer direction="vertical" margin={15} />
-            <Button>Join Now</Button>
+            <Button onClick={popup_func}>Explore Now</Button>
           </LogoContainer>
           {!isMobile && (
             <StandoutImage>

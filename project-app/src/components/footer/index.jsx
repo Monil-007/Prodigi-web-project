@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { BrandLogo } from "../brandLogo";
 
-import { faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { deviceSize } from "../responsive";
 import { useMediaQuery } from "react-responsive";
 
@@ -117,34 +117,32 @@ export function Footer(props) {
 
   return (
     <FooterContainer>
-      <TopContainer>
-        <ContentContainer>
-          <Title>Categories</Title>
-          <FLink>Car Repair</FLink>
-          <FLink>Carpentry</FLink>
-          <FLink>Landscaping</FLink>
-          <FLink>Cleaning</FLink>
-          <FLink>Home Improvement</FLink>
-          <FLink>Demolition</FLink>
-          <FLink>Management</FLink>
-          <FLink>Others</FLink>
+      <TopContainer >
+        <ContentContainer style={{ marginLeft: "40%", animation: "easeIn" }}>
+          <h1 style={{ color: "red" }}>Available services</h1>
+          <div className="cat" style={{ marginLeft: "70px" }}>
+            <Title>Categories</Title>
+
+            <FLink>SuperMarket</FLink><br></br>
+            <FLink>Wholesaler</FLink><br></br>
+            <FLink>Shop owners</FLink><br></br>
+            <FLink>Stall Vendors</FLink><br></br>
+            <FLink>Others</FLink></div>
+
         </ContentContainer>
-        <ContentContainer>
-          <Title>Access</Title>
-          <FLink>Login</FLink>
-          <FLink>Join Us</FLink>
-          <FLink>Login as Specialist</FLink>
-          <FLink>Become a Specialist</FLink>
-        </ContentContainer>
+
       </TopContainer>
       <BottomContainer>
         <LeftBottomContainer>
           <BrandLogo hideLogo color="#8A8A8A" textSize={isMobile ? 20 : 25} />
-          <PrivacyText> &#169; All Rights Reserved. 2020</PrivacyText>
+          <PrivacyText> &#169; All Rights Reserved. 2022</PrivacyText>
         </LeftBottomContainer>
         <RightBottomContainer>
           <SocialIcon>
-            <FontAwesomeIcon icon={faFacebook} />
+            <FontAwesomeIcon icon={faGithub} />
+          </SocialIcon>
+          <SocialIcon>
+            <FontAwesomeIcon icon={faLinkedin} />
           </SocialIcon>
           <SocialIcon>
             <FontAwesomeIcon icon={faTwitter} />

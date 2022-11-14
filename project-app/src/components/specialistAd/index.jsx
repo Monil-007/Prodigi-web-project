@@ -82,12 +82,12 @@ export function SpecialistAd(props) {
           />
           <Marginer direction="vertical" margin="1em" />
           <SloganContainer>
-            <Slogan>You’re a Specialist, and you </Slogan>
-            <Slogan>have an outstanding</Slogan>
-            <Slogan>Service to offer?</Slogan>
+            <Slogan style={{ fontSize: "14px" }}>If you dream of opening a shop (grocery,stationary etc) </Slogan>
+            <Slogan style={{ fontSize: "14px" }}>need the best profitable place to locate,most selling products with brands name as well</Slogan>
+            <Slogan style={{ fontSize: "14px" }}>all with our high ratio of success of our ML algorithms</Slogan>
           </SloganContainer>
           <Marginer direction="vertical" margin="0.8em" />
-          <Button size={15}>Join as Specialist</Button>
+          <Button size={15}>Join as Shop owner</Button>
         </SloganContainer>
         <StandoutImage>
           <img src={FarmingImg} alt="join-as-specialist" />

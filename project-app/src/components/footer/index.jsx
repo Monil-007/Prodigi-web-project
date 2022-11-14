@@ -119,7 +119,7 @@ export function Footer(props) {
     <FooterContainer>
       <TopContainer >
         <ContentContainer style={{ marginLeft: "40%", animation: "easeIn" }}>
-          <h1 style={{ color: "red" }}>Available services</h1>
+          <h1 style={{ color: '#008080' }}>Available services</h1>
           <div className="cat" style={{ marginLeft: "70px" }}>
             <Title>Categories</Title>
 
